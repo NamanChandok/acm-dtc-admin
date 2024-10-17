@@ -46,7 +46,7 @@ export default function Home() {
       <form onSubmit={handleSubmit} className="grid gap-4" >
         
         <div className="flex flex-col gap-1">
-            <label htmlFor="eventCover" className="font-medium">Event Images*</label>
+            <label htmlFor="eventCover" className="font-medium">Resource File*</label>
             <MuiFileInput required multiple fullWidth value={files} placeholder="Upload .pdf" onChange={(newValue)=>setFiles(newValue)} /> 
         </div>
 
