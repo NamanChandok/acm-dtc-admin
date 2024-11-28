@@ -9,6 +9,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
 import dayjs, { Dayjs } from "dayjs";
 import { useEffect, useState } from "react";
+import { getAuth } from "firebase/auth";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
     }, [date]);
 
     const handleSubmit = async (event:any) => {
+        getAuth();
         event.preventDefault();
         setUpload('Uploading...');
         if (file?.type !== 'image/jpeg' && file?.type !== 'image/png') {

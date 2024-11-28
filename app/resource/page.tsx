@@ -5,6 +5,7 @@ import { storage } from "@/firebase";
 import { MuiFileInput } from "mui-file-input";
 import { ref, uploadBytes } from "firebase/storage";
 import { useEffect, useState } from "react";
+import { getAuth } from "firebase/auth";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
     const [upload, setUpload] = useState('Upload Data');
 
     const handleSubmit = async (e:any) => {
+        getAuth();
         e.preventDefault();
         setUpload('Uploading...');
         files.forEach((file, index) => {
