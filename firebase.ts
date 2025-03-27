@@ -3,10 +3,10 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-const firebase_api_key = process.env.FIREBASE_API_KEY;
-const firebase_app_id = process.env.FIREBASE_APP_ID;
-const firebase_msg_id = process.env.FIREBASE_MSG_ID;
-const firebase_measure_id = process.env.FIREBASE_MEASURE_ID;
+const firebase_api_key = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
+const firebase_app_id = process.env.NEXT_PUBLIC_FIREBASE_APP_ID;
+const firebase_msg_id = process.env.NEXT_PUBLIC_FIREBASE_MSG_ID;
+const firebase_measure_id = process.env.NEXT_PUBLIC_FIREBASE_MEASURE_ID;
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
