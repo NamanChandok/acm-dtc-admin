@@ -1,10 +1,11 @@
 "use client";
+
+// acm@dtc..12
+
 import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { app } from "@/firebase";
-
-const user_email = process.env.MAIL!;
 
 const LoginPage: React.FC = () => {
 	const auth = getAuth(app);
@@ -14,7 +15,7 @@ const LoginPage: React.FC = () => {
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
 		const password = event.target.password.value;
-		signInWithEmailAndPassword(auth, user_email, password)
+		signInWithEmailAndPassword(auth, "acmuser@yopmail.com", password)
 			.then((userCredential) => {
 				const user = userCredential.user;
 				user.getIdToken().then((token) => {

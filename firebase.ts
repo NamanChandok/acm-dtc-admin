@@ -2,25 +2,19 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-
-const firebase_api_key = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
-const firebase_app_id = process.env.NEXT_PUBLIC_FIREBASE_APP_ID;
-const firebase_msg_id = process.env.NEXT_PUBLIC_FIREBASE_MSG_ID;
-const firebase_measure_id = process.env.NEXT_PUBLIC_FIREBASE_MEASURE_ID;
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: firebase_api_key,
+	apiKey: "AIzaSyC9B4W5sVjEQ7fnsWA8MEVWAs2j5gj4raw",
 	authDomain: "acm-dtc.firebaseapp.com",
 	projectId: "acm-dtc",
 	storageBucket: "acm-dtc.appspot.com",
-	messagingSenderId: firebase_msg_id,
-	appId: firebase_app_id,
-	measurementId: firebase_measure_id,
+	messagingSenderId: "775236604378",
+	appId: "1:775236604378:web:77fa3eb61d5551ef57b0e3",
+	measurementId: "G-L1GJDKV4YH",
 };
 
 // Initialize Firebase
