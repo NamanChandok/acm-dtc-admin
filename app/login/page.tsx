@@ -4,6 +4,8 @@ import { Button, TextField } from "@mui/material";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { app } from "@/firebase";
 
+const user_email = process.env.USER_EMAIL!;
+
 const LoginPage: React.FC = () => {
 	const auth = getAuth(app);
 	const [error, setError] = useState<string | null>(null);
@@ -12,7 +14,7 @@ const LoginPage: React.FC = () => {
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
 		const password = event.target.password.value;
-		signInWithEmailAndPassword(auth, "acmuser@yopmail.com", password)
+		signInWithEmailAndPassword(auth, user_email, password)
 			.then((userCredential) => {
 				const user = userCredential.user;
 				user.getIdToken().then((token) => {
