@@ -1,7 +1,4 @@
 "use client";
-
-// acm@dtc..12
-
 import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
