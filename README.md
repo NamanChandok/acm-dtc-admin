@@ -15,3 +15,7 @@ Original Website is available at https://github.com/NamanChandok/acm-dtc
    ```bash
    npm run dev
    ```
+
+## 📄 License
+
+This project is licensed under the MIT License.
